@@ -22,7 +22,9 @@ html {
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     height: fit-content;
-    margin-top: 25em;
+    margin-top: 8em;
+    margin-right: 15em;
+    
 }
 
 :root {
@@ -30,7 +32,7 @@ html {
 }
 
 body {
-    
+    margin: 0;
     padding: 0;
     margin-left: 14em;
     display: flex;
@@ -44,7 +46,7 @@ body {
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: (1, auto);
     gap: 10px; 
     margin: 20px 0;
 }
@@ -60,16 +62,7 @@ body {
 }
 
 .btn:hover {
-    border: black;
-}
-
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: black;
-}
-
-.btn.wrong {
-    --hue: var(--hue-wrong);
+    border: solid 3px black;
 }
 
 .submit {

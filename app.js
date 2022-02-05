@@ -1,33 +1,25 @@
 const quizContainer = document.getElementById('quiz');
-const submitButton = document.getElementById('submit');
 const scoreboard = document.getElementById('scorebar');
+const answerButtons = document.getElementById('answer-buttons');
 
 function buildQuiz(){
-    myQuestions.forEach(Q => {
-       // console.log(Q.answers)
-        let myQuestion = document.createElement("div");
-        myQuestion.className = "question";
-        let questionText = document.createElement("h2");
-        questionText.innerText = Q.question;
-        myQuestion.appendChild(questionText)
-        //console.log(questionText);
-        // Q.answers.forEach(A => {
-        //      let answerRadioBtn = document.createElement("input");
-        //      answerRadioBtn.value = A.text;
-        //      answerRadioBtn.type  = "radio"; 
-        //      myQuestion.appendChild(answerRadioBtn)
-
-             
-
-            
-
-        
-        quizContainer.appendChild(myQuestion);
-    });
-   
-
-    const output = [];
+    //Quiz questions
+    currentQuestion = 0;
+    let myQuestion = document.createElement("div");
+    myQuestion.className = "question";
+    let questionText = document.createElement("h2");
+    questionText.innerText = myQuestions[currentQuestion].question;
+    myQuestion.appendChild(questionText);
+    quizContainer.appendChild(myQuestion);
+    
+    //Quiz answers
+    
+    
+    
+       
 }
+
+function selectAnswer(){}
 
 function scoring(){} 
 
