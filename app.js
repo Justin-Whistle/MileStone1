@@ -1,28 +1,50 @@
+import { myQuestions } from "./questions.js";
 const quizContainer = document.getElementById('quiz');
 const scoreboard = document.getElementById('scorebar');
-const answerButtons = document.getElementById('answer-buttons');
+let userScore = 0
+let currentQuestionIndex = 0
+let currentQuestion = myQuestions[currentQuestionIndex];
 
-function buildQuiz(){
-    //Quiz questions
-    currentQuestion = 0;
-    let myQuestion = document.createElement("div");
-    myQuestion.className = "question";
-    let questionText = document.createElement("h2");
-    questionText.innerText = myQuestions[currentQuestion].question;
-    myQuestion.appendChild(questionText);
-    quizContainer.appendChild(myQuestion);
-    
-    //Quiz answers
-    
-    
-    
-       
+let questionDiv = document.createElement("div");
+questionDiv.className = "question";
+
+let questionText = document.createElement("h2");
+
+questionDiv.appendChild(questionText);
+quizContainer.appendChild(questionDiv);
+
+function buildQuiz() {
+    //Quiz questions 
+    currentQuestion = myQuestions[currentQuestionIndex];
+    questionText.innerText = currentQuestion.question;
+    currentQuestionIndex++
+    for (let i = 0; i < 3; i++) {
+        answerButtons[i].innerText = currentQuestion.answers[i].text;
+    }    
 }
 
-function selectAnswer(){}
+let answerButtons = document.querySelectorAll(".answer");
+for (let i = 0; i < 3; i++) {
+    
+    answerButtons[i].addEventListener("click", function () {
+        
+        if (currentQuestion.answers[i].correct == true) {
+            userScore +=10
+        } else {
+            userScore -=10
+        }
 
-function scoring(){} 
+        scoreboard.append(userScore);
 
-function showResults(){}
+        if (currentQuestionIndex < myQuestions.length) {
+            buildQuiz()
+        }
+        //this is if the game is over
+        else {
+            alert("GAME OVER!");
+            window.location.reload();
+        }
+    })
+}
 
 buildQuiz()

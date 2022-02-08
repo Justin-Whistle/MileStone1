@@ -1,4 +1,4 @@
-const myQuestions = [
+export const myQuestions = [
     {
         question: "What is Phyllis's maiden name?",
         answers: [
