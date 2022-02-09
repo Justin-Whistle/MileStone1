@@ -35,7 +35,9 @@ for (let i = 0; i < 3; i++) {
             userScore -=10
         }
 
-        scoreboard.innerText = userScore;
+        scoreboard.innerText = "Score: " + userScore;
+
+        //currentQuestion.answers[i].correct.style.color = 'lightgreen';
 
         if (currentQuestionIndex < myQuestions.length) {
             buildQuiz()
