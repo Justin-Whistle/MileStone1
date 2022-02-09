@@ -4,22 +4,22 @@ export const myQuestions = [
         answers: [
             { text: "Vance", correct: false},
             { text: "Lapin", correct: true},
-            { text: "lanpin", correct: false}
+            { text: "Lanpin", correct: false}
         ]
     },
     {
         question: "What does Michael ask Pam to spread on his foot that he burned on a George Foreman grill?",
         answers: [
             { text: "Maynaise", correct: false},
-            { text: "peanut butter", correct: false},
-            { text: "butter", correct: true}
+            { text: "Peanut butter", correct: false},
+            { text: "Butter", correct: true}
         ]
     },
     {
         question: "What did Kevin buy for himself when he got himself for Secret Santa?",
         answers: [
-            { text: "a foot massager", correct: false},
-            { text: "a foot bath", correct: true},
+            { text: "A foot massager", correct: false},
+            { text: "A foot bath", correct: true},
             { text: "M&M's", correct: false}
         ]
     },
@@ -27,7 +27,7 @@ export const myQuestions = [
         question: "What's Stanley's morning 3 by 5?",
         answers: [
             { text: "Iced tea, 3 sugars, 5 creams", correct: true},
-            { text: "coffee, 3 sugars, 5 creams", correct: false},
+            { text: "Coffee, 3 sugars, 5 creams", correct: false},
             { text: "Tea, 3 sugars, 5 creams", correct: false}
         ]
     },
@@ -50,25 +50,25 @@ export const myQuestions = [
     {
         question: "What does Michael order at Hooters with Jim after saying, 'I will have a chicken breast, hold the chicken?'",
         answers: [
-            { text: "cheeseburger", correct: false},
-            { text: "gourmet hotdog", correct: true},
-            { text: "wings", correct: false}
+            { text: "Cheeseburger", correct: false},
+            { text: "Gourmet hotdog", correct: true},
+            { text: "Wings", correct: false}
         ]
     },
     {
         question: "What does Michael make a ton of for him and Pam on the morning of the first day of the Michael Scott Paper Company?",
         answers: [
-            { text: "waffles", correct: false},
-            { text: "pancakes", correct: false},
-            { text: "french toast", correct: true}
+            { text: "Waffles", correct: false},
+            { text: "Pancakes", correct: false},
+            { text: "French toast", correct: true}
         ]
     },
     {
         question: "Dwight and Robert California's son agree that what is the scariest animal?",
         answers: [
-            { text: "box jellyfish", correct: true},
-            { text: "shark", correct: false},
-            { text: "black bear", correct: false}
+            { text: "Box jellyfish", correct: true},
+            { text: "Shark", correct: false},
+            { text: "Black bear", correct: false}
         ]
     },
     {
@@ -90,9 +90,57 @@ export const myQuestions = [
     {
         question: "What was Ryan trying to heat up in the toaster when he started the fire?",
         answers: [
-            { text: "spaghetti", correct: false},
-            { text: "hot pocket", correct: false},
-            { text: "cheesy pita", correct: true}
+            { text: "Spaghetti", correct: false},
+            { text: "Hot pocket", correct: false},
+            { text: "Cheesy pita", correct: true}
         ]    
     },
+    {
+        question: "What kind of sauce does Kevin ask for when being forced to eat broccoli as part of his New Year's resolution?",
+        answers: [
+            { text: "Ketchup", correct: false},
+            { text: "Hollandaise", correct: true},
+            { text: "Mayo", correct: false}
+        ]
+    },
+    {
+        question: "Aside from Jim, who in the office has an obvious crush on Pam throughout the show?",
+        answers: [
+            { text: "Toby", correct: true},
+            { text: "Andy", correct: false},
+            { text: "Ryan", correct: false}
+        ]
+    },
+    {
+        question: "What does Dwight stop Michael from eating in the woods?",
+        answers: [
+            { text: "Berries", correct: false},
+            { text: "Mushrooms", correct: true},
+            { text: "Robin's eggs", correct: false}
+        ]
+    },
+    {
+        question: "What does Andy pose as during the lunch with the Insurance salesman whom they suspect to be in the mob?",
+        answers: [
+            { text: "A police officer", correct: false},
+            { text: "A mechanic", correct: true},
+            { text: "Another salesman", correct: false}
+        ]
+    },
+    {
+        question: "What is Michael and Jan's safe word if things go too far?",
+        answers: [
+            { text: "Foliage", correct: true},
+            { text: "Bonfire", correct: false},
+            { text: "Sublime", correct: false}
+        ]
+    },
+    {
+        question: "What does Michael sleep on instead of the bed because Jan has 'space issues'?",
+        answers: [
+            { text: "A couch", correct: false},
+            { text: "A bench", correct: true},
+            { text: "A chair", correct: false}    
+        ]
+    }
 ]

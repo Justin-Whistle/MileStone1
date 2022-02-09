@@ -30,18 +30,19 @@ for (let i = 0; i < 3; i++) {
         
         if (currentQuestion.answers[i].correct == true) {
             userScore +=10
+            
         } else {
             userScore -=10
         }
 
-        scoreboard.append(userScore);
+        scoreboard.innerText = userScore;
 
         if (currentQuestionIndex < myQuestions.length) {
             buildQuiz()
         }
         //this is if the game is over
         else {
-            alert("GAME OVER!");
+            alert(`Game Over! You're score was ${userScore}!`);
             window.location.reload();
         }
     })
