@@ -1,0 +1,18 @@
+@import "config";
+@import "utilities";
+
+
+.btn {
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 25px;
+    padding: 10px 10px;
+    color: $questionFont-color;
+    font-weight: 650;
+    outline: none;
+    background-color: $btnBackground-color;
+    font-size: xx-large;
+
+    &:hover {
+        border: solid 3px black;
+    }
+}

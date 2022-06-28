@@ -1,0 +1,100 @@
+.btn {
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  border-radius: 25px;
+  padding: 10px 10px;
+  color: black;
+  font-weight: 650;
+  outline: none;
+  background-color: #ecae4f;
+  font-size: xx-large;
+}
+
+.btn:hover {
+  border: solid 3px black;
+}
+
+html {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/91TmR1v-qRL._RI_.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-left: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vh;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px 2px;
+          box-shadow: 0 0 10px 2px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10em;
+  margin-right: 10em;
+}
+
+.main #scorebar {
+  color: #140f0f;
+  background-color: white;
+  font-size: x-large;
+}
+
+.main #quiz {
+  background-color: white;
+}
+
+.main #quiz .btn-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1, auto;
+      grid-template-columns: 1, auto;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.main .question {
+  background-color: white;
+}
+
+.main .question h2 {
+  color: #312020;
+  font-size: xx-large;
+}
+
+.main .question h2:hover {
+  color: #3d3b3b;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+/*# sourceMappingURL=style.css.map */

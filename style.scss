@@ -1,0 +1,55 @@
+@import "btnConfig";
+@import "config";
+@import "utilities";
+
+html {
+   @include html();
+}
+
+body {
+    @include body();
+}
+
+.main {
+    max-width: 80%;
+    background-color: $quizBackground-color;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    height: fit-content;
+    width: fit-content; 
+    margin-top: 10em;
+    margin-right: 10em;
+    
+    #scorebar{
+        color : $dark2-color;
+        background-color: $quizBackground-color;
+        font-size: x-large;
+    }
+
+    #quiz {
+        background-color: $quizBackground-color;
+
+        .btn-grid {
+            @include btnGrid();
+        }
+    }
+
+    .question {
+        background-color: $quizBackground-color;
+
+        h2 {
+            color: $dark3-color;
+            font-size: xx-large;
+
+            &:hover {
+                color: $dark-color;
+            }
+        }
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
